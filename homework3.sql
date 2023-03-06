@@ -59,7 +59,7 @@ ORDER BY salary DESC
 LIMIT 2;
 
 -- 3. Посчитать суммарную зарплату(salary) по каждой специальности(post)
-SELECT salary, post,
+SELECT post,
 SUM(salary) AS "Суммарная зарплата по специальности"
 FROM staff
 GROUP BY post;
